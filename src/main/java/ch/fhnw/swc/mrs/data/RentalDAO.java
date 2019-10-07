@@ -77,7 +77,7 @@ public class RentalDAO {
 	
     /**
      * Retrieve all rentals of a user.
-     * @param user to retrieve rentals from.
+     * @param userid to retrieve rentals from.
      * @return all rentals of this user, possibly empty list.
      */
     public List<Rental> getRentalsByUser(UUID userid) {
