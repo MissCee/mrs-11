@@ -1,38 +1,42 @@
 pipeline {
-         agent any
-         tools {
-         maven 'Maven 3.6'
-         jdk 'jdk11'
-         }
-         stages {
-                 stage('Checkout') {
-                 steps {
-                     checkout scm
-        			 sh 'mvn clean'
-                 }
-                 }
-                 stage('Build') {
-                 steps {
-        			sh 'mvn package'
-      		     }
-                 }
-                 stage('Integration Testing') {
-                 steps {
-        			sh 'mvn -f ./pom-integrationTesting.xml  integration-test'
-      		     }
-                 }
-                 stage('Deploy') {
-                 steps {
-                      sh 'mkdir -p /var/jenkins_home/download'
-                      sh 'cp ./target/*.jar /var/jenkins_home/download' 
-              	 }
-              	 }
-              }  
-              post {
-                  always {
-                      junit 'target/surefire-reports/*.xml'
-                  }
+	agent any
+    tools {
+    	maven 'Maven 3.6'
+        jdk 'JDK11'
+    }
+    stages {
+    	stage('Version') {
+    		agent {
+    		    docker 'maven:3-alpine'
+    		}
+    	    steps {
+    	    	echo 'NOTE: this is the maven version of a docker container'
+    	        sh 'mvn --version'
+    	    }
+    	}
+    	stage('Checkout') {
+        	steps {
+            	checkout scm
+        		sh 'mvn clean'
+			}
+		}
+        stage('Build') {
+        	steps {
+        		sh 'mvn verify'
+      		}
+		}
+		stage('Site') {
+		    steps {
+		        sh 'mvn site'
+		    }
+		}
+	}
+	post {
+	    always {
+	        junit 'target/surefire-reports/**/*.xml'
+	        junit 'target/failsafe-reports/**/*.xml'
+	    }
 
-              }
+	}
 
 }
