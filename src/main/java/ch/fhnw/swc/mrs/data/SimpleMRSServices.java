@@ -20,6 +20,7 @@ import ch.fhnw.swc.mrs.model.Movie;
 import ch.fhnw.swc.mrs.model.PriceCategory;
 import ch.fhnw.swc.mrs.model.Rental;
 import ch.fhnw.swc.mrs.model.User;
+import ch.fhnw.swc.mrs.model.Bill;
 
 /**
  * A simple implementation of the MRS Services.
@@ -136,6 +137,9 @@ public class SimpleMRSServices implements MRSServices {
             UUID id = UUID.randomUUID();
             r.setRentalId(id);
             rentals.put(id, r);
+            Bill b = new Bill(u.getFirstName(), u.getName(), u.getRentals());
+            System.out.println(b.getStatement());
+
             return true;
         }
         return false;
