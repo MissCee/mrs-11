@@ -46,7 +46,7 @@ public class ITBill {
        boolean rent = sms.createRental(mickey.getUserid(), movie.getMovieid(), today);
        assertEquals(true, rent);
         String[] lines = newConsole.toString().split("\n");
-        
+
         assertEquals("Statement", lines[0]);
         assertEquals("=========", lines[1]);
         assertEquals("for: Mouse Mickey", lines[2]);
@@ -54,6 +54,14 @@ public class ITBill {
         assertEquals("Days   Price  Title", lines[4]);
         assertEquals("-------------------", lines[5]);
         assertEquals("   0    0.00  Joker", lines[6]);
+
+    }
+
+    @Test
+    public void editClient() {
+        mickey = sms.createUser("Mouse", "Mickey", LocalDate.of(1990, 10, 10));
+        movie = sms.createMovie("Joker", today, "Regular", 0);
+
 
     }
 }

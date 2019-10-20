@@ -117,6 +117,8 @@ public class UserController extends AbstractController {
             getBackend().updateUser(editing);
         }
         handleCancel();
+        // TODO: Test für reload()
+        reload();
     }
 
     private LocalDate text2Date(String relDateText) {
@@ -138,12 +140,24 @@ public class UserController extends AbstractController {
         
         int row = view.table.getSelectedRow();
         DefaultTableModel tm = (DefaultTableModel) view.table.getModel();
-        UUID id = UUID.fromString((String) tm.getValueAt(row, 0));
+        // TODO: Test für auskommentierte Zeile schreiben
+        // UUID id = UUID.fromString((String)tm.getValueAt(row, 0));
+        UUID id = (UUID) tm.getValueAt(row,0);
         editing = getBackend().getUserById(id);
+
+        // TODO: Test für die folgenden 6 Zeilen
+        view.surnameTF.setText(editing.getName());
+        view.firstnameTF.setText(editing.getFirstName());
+        view.birthdateTF.setText(UserTab.SDF.format(editing.getBirthdate()));
+
+        view.surnameTF.setEnabled(true);
+        view.firstnameTF.setEnabled(true);
+        view.birthdateTF.setEnabled(true);
 
         view.surnameTF.setEditable(true);
         view.firstnameTF.setEditable(true);
         view.birthdateTF.setEditable(true);
+
         view.surnameTF.requestFocus();
     }
 
@@ -156,8 +170,9 @@ public class UserController extends AbstractController {
         
         int row = view.table.getSelectedRow();
         DefaultTableModel tm = (DefaultTableModel) view.table.getModel();
-        UUID id = UUID.fromString((String)tm.getValueAt(row, 0));
-
+        // TODO: Test für auskommentierte Zeile schreiben
+        // UUID id = UUID.fromString((String)tm.getValueAt(row, 0));
+        UUID id = (UUID) tm.getValueAt(row,0);
         if (getBackend().deleteUser(id)) {
             tm.removeRow(row);
             view.table.clearSelection();

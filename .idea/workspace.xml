@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7feed428-b81c-45a8-b6b7-08d478150e9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/MovieRentalSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/model/Bill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/model/Statement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ch/fhnw/swc/mrs/ITBill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ch/fhnw/swc/mrs/model/BillTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ch/fhnw/swc/mrs/model/StatementTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/data/SimpleMRSServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/data/SimpleMRSServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/model/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/model/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/view/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/view/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ch/fhnw/swc/mrs/ITBill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ch/fhnw/swc/mrs/ITBill.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ch/fhnw/swc/mrs/ITBill.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+            <state relative-caret-position="674">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,29 +64,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/data/SimpleMRSServices.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="140" column="33" lean-forward="true" selection-start-line="140" selection-start-column="33" selection-end-line="140" selection-end-column="33" />
+            <state relative-caret-position="170">
+              <caret line="116" selection-start-line="116" selection-end-line="116" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/model/PriceCategory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/model/RegularPriceCategory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -109,24 +85,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/view/RentMovieController.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/view/MovieController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="159" column="21" selection-start-line="159" selection-start-column="12" selection-end-line="159" selection-end-column="22" />
+            <state relative-caret-position="402">
+              <caret line="126" column="17" selection-start-line="126" selection-start-column="17" selection-end-line="126" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/view/AbstractController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/view/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="23" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="23" />
-              <folding>
-                <element signature="e#801#802#0" expanded="true" />
-                <element signature="e#831#832#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="476">
+              <caret line="119" column="8" selection-start-line="119" selection-start-column="8" selection-end-line="120" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/view/RentMovieController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="725">
+              <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -147,6 +128,9 @@
       <find>etuserbyna</find>
       <find>createRent</find>
       <find>create</find>
+      <find>surnameTF</find>
+      <find>updateUser</find>
+      <find>handleCan</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -162,6 +146,8 @@
         <option value="$PROJECT_DIR$/src/test/java/ch/fhnw/swc/mrs/integration/ITBill.java" />
         <option value="$PROJECT_DIR$/src/test/java/ch/fhnw/swc/mrs/model/RentalTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ch/fhnw/swc/mrs/ITBill.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/view/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/view/MovieController.java" />
       </list>
     </option>
   </component>
@@ -293,6 +279,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -323,7 +310,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ITBill">
+  <component name="RunManager" selected="Application.MovieRentalSystem">
     <configuration name="MovieRentalSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ch.fhnw.swc.mrs.MovieRentalSystem" />
       <module name="mrs" />
@@ -427,8 +414,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ITBill" />
         <item itemvalue="Application.MovieRentalSystem" />
+        <item itemvalue="JUnit.ITBill" />
         <item itemvalue="JUnit.ITBill.testPrintBill" />
         <item itemvalue="JUnit.StatementTest" />
         <item itemvalue="JUnit.BillTest" />
@@ -446,14 +433,11 @@
       <option name="presentableId" value="Default" />
       <updated>1571580722021</updated>
       <workItem from="1571580725377" duration="940000" />
-      <workItem from="1571581903661" duration="7108000" />
+      <workItem from="1571581903661" duration="8857000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ITBill - 2019.10.20 at 21h 22m 52s.xml">
-      <configuration name="ITBill" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ITBill - 2019.10.20 at 21h 23m 11s.xml">
       <configuration name="ITBill" configurationId="JUnit" />
     </history-entry>
@@ -481,9 +465,12 @@
     <history-entry file="ITBill - 2019.10.20 at 21h 30m 48s.xml">
       <configuration name="ITBill" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ITBill - 2019.10.20 at 21h 31m 04s.xml">
+      <configuration name="ITBill" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8048000" />
+    <option name="totallyTimeSpent" value="9797000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -499,7 +486,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32827735" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3954496" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.15059589" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -530,16 +517,22 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/data/SimpleMRSServices.java</url>
-          <line>131</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ch/fhnw/swc/mrs/ITBill.java</url>
           <line>38</line>
           <properties />
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/data/SimpleMRSServices.java</url>
+          <line>114</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/view/UserController.java</url>
+          <line>106</line>
+          <properties />
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -549,13 +542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="41" column="44" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/view/MovieController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1819">
-          <caret line="118" column="19" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -717,13 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/view/RentMovieController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="159" column="21" selection-start-line="159" selection-start-column="12" selection-end-line="159" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/view/AbstractController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -763,16 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/data/SimpleMRSServices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="140" column="33" lean-forward="true" selection-start-line="140" selection-start-column="33" selection-end-line="140" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/model/Bill.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -797,13 +766,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.5/lib/src.zip!/java.desktop/javax/swing/text/JTextComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="1811" column="16" selection-start-line="1811" selection-start-column="16" selection-end-line="1811" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/api/MRSServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="100" column="12" selection-start-line="100" selection-start-column="12" selection-end-line="100" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ch/fhnw/swc/mrs/ITBill.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+        <state relative-caret-position="674">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/view/RentalController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-329">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/view/RentMovieController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/data/SimpleMRSServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="116" selection-start-line="116" selection-end-line="116" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/view/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="119" column="8" selection-start-line="119" selection-start-column="8" selection-end-line="120" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/fhnw/swc/mrs/view/MovieController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="126" column="17" selection-start-line="126" selection-start-column="17" selection-end-line="126" selection-end-column="17" />
         </state>
       </provider>
     </entry>

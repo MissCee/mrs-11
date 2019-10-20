@@ -123,6 +123,8 @@ public class MovieController extends AbstractController {
             getBackend().updateMovie(editing);
         }
         handleCancel();
+        // TODO: Test für reload()
+        reload();
     }
 
     private LocalDate text2Date(String relDateText) {
