@@ -35,6 +35,20 @@ pipeline {
                }
         }
 
+        stage('Integration Testing') {
+            steps {
+                echo 'Integration Testing...'
+            	sh 'mvn integration-test'
+      		}
+        }
+
+        stage('Test'){
+            parallel (
+                "unit tests": { sh 'mvn test' },
+                "integration tests": { sh 'mvn integration-test' }
+              )
+        }
+
 		stage('Site') {
 		    steps {
 		        sh 'mvn site'
