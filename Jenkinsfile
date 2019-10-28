@@ -25,6 +25,16 @@ pipeline {
         		sh 'mvn verify'
       		}
 		}
+
+		stage('Unit Test') {
+            steps {
+               echo 'Unit Testing...'
+               sh 'mvn resources:testResources'
+               sh 'mvn compiler:testCompile'
+               sh 'mvn surefire:test'
+               }
+        }
+
 		stage('Site') {
 		    steps {
 		        sh 'mvn site'
