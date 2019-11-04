@@ -6,9 +6,7 @@ pipeline {
     }
     stages {
     	stage('Version') {
-    	    agent {
-    		docker 'maven:3-alpine'
-    		}
+    	    
     	    steps {
     	    	echo 'NOTE: this is the maven version of a docker container'
     	        sh 'mvn --version'
