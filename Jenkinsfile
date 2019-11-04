@@ -40,13 +40,6 @@ pipeline {
       		}
         }
 
-        stage('Test'){
-            parallel (
-                "unit tests": { sh 'mvn test' },
-                "integration tests": { sh 'mvn integration-test' }
-              )
-        }
-
 	stage('Site') {
 	     steps {
 		 sh 'mvn site'
