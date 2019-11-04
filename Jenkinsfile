@@ -1,13 +1,13 @@
 pipeline {
-	agent any
+    agent any
     tools {
     	maven 'Maven 3.6'
         jdk 'JDK11'
     }
     stages {
     	stage('Version') {
-    		agent {
-    		    docker 'maven:3-alpine'
+    	    agent {
+    		docker 'maven:3-alpine'
     		}
     	    steps {
     	    	echo 'NOTE: this is the maven version of a docker container'
@@ -24,9 +24,8 @@ pipeline {
         	steps {
         		sh 'mvn verify'
       		}
-		}
-
-		stage('Unit Test') {
+	}
+	stage('Unit Test') {
             steps {
                echo 'Unit Testing...'
                sh 'mvn resources:testResources'
@@ -34,11 +33,10 @@ pipeline {
                sh 'mvn surefire:test'
                }
         }
-
         stage('Integration Testing') {
             steps {
                 echo 'Integration Testing...'
-            	sh 'mvn integration-test'
+            	sh 'mvn failsafe:integration-test'
       		}
         }
 
@@ -49,12 +47,12 @@ pipeline {
               )
         }
 
-		stage('Site') {
-		    steps {
-		        sh 'mvn site'
-		    }
-		}
+	stage('Site') {
+	     steps {
+		 sh 'mvn site'
+	     }
 	}
+   }
 	post {
 	    always {
 	        junit 'target/surefire-reports/**/*.xml'
